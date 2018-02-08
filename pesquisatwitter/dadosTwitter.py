@@ -11,3 +11,10 @@ for status in twitter.search(q='"python"')["statuses"]:
     text = status["text"]
     print(user,":",text)
     print()
+'''results = twitter.cursor(twitter.search,q='python')
+
+for result in results:
+    user = result["user"]["screen_name"]
+    text = result["text"]
+    print(user,":",text)
+    print()'''
