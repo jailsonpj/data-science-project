@@ -15,13 +15,7 @@ twitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_TOKEN,ACCESS_SECRET)
     print(user,":",text)
     print()'''
 
-
-'''for status in twitter.search(q='"presidio manaus"')["statuses"]:
-    search = status
-
-df = pd.DataFrame(search)
-print(search)'''
-
+#pesquisa timeline de um usurio
 try:
     user_timeline = twitter.get_user_timeline(screen_name='julianyraiol')
 except TwythonError as e:
